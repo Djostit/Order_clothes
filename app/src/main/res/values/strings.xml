@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Order clothes</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="go_to_order">Go to order</string>
+    <string name="welcome">Welcome</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="choose_your_size">Choose your size</string>
+    <string name="choose_the_type_of_clothing">Choose the type of clothing</string>
+    <string name="get">Get</string>
+    <string-array name="array_size">
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+    <string-array name="array_type_cloth">
+        <item>Headgear</item>
+        <item>Outerwear</item>
+        <item>Underwear</item>
+        <item>Shoes</item>
+    </string-array>
+    <string-array name="array_Headgear_male">
+        <item>PANAMA ADICOLOR TREFOIL</item>
+        <item>БЕЙСБОЛКА ADICOLOR CLASSIC CURVED FOAM</item>
+        <item>TIRO 21 BINI HAT</item>
+        <item>SNAPBACK CAP</item>
+    </string-array>
+    <string-array name="array_Outerwear_male">
+        <item>HOODED PARKA UTILITAS</item>
+        <item>RUNNING JACKET OWN THE RUN</item>
+        <item>DOWN JACKET HELIONIC</item>
+        <item>R.Y.V. COACH JACKET</item>
+    </string-array>
+    <string-array name="array_Underwear_male">
+        <item>ESSENTIALS 3-STRIPES KNIT PANTS</item>
+        <item>INSULATED TWO-LAYER RESORT JUMPSUIT</item>
+        <item>SHAMROCK 3D ADICOLOR PANTS</item>
+        <item>ADICOLOR TREFOIL TEC LUXE PANTS</item>
+    </string-array>
+    <string-array name="array_Shoes_male">
+        <item>HOOPS 2.0 HIGH-TOP SNEAKERS</item>
+        <item>HANDBALL SNEAKERS SPEZIAL</item>
+        <item>OZWEEGO SNEAKERS</item>
+        <item>FORUM LOW SNEAKERS</item>
+    </string-array>
+
+    <string-array name="array_Headgear_female">
+        <item>PANAMA ADICOLOR TREFOIL</item>
+        <item>БЕЙСБОЛКА ADICOLOR CLASSIC CURVED FOAM</item>
+        <item>TIRO 21 BINI HAT</item>
+        <item>SNAPBACK CAP</item>
+    </string-array>
+    <string-array name="array_Outerwear_female">
+        <item>HOODED PARKA UTILITAS</item>
+        <item>RUNNING JACKET OWN THE RUN</item>
+        <item>DOWN JACKET HELIONIC</item>
+        <item>R.Y.V. COACH JACKET</item>
+    </string-array>
+    <string-array name="array_Underwear_female">
+        <item>ESSENTIALS 3-STRIPES KNIT PANTS</item>
+        <item>INSULATED TWO-LAYER RESORT JUMPSUIT</item>
+        <item>SHAMROCK 3D ADICOLOR PANTS</item>
+        <item>ADICOLOR TREFOIL TEC LUXE PANTS</item>
+    </string-array>
+    <string-array name="array_Shoes_female">
+        <item>HOOPS 2.0 HIGH-TOP SNEAKERS</item>
+        <item>HANDBALL SNEAKERS SPEZIAL</item>
+        <item>OZWEEGO SNEAKERS</item>
+        <item>FORUM LOW SNEAKERS</item>
+    </string-array>
+</resources>
