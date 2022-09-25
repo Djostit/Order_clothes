@@ -9,6 +9,14 @@
     <string name="choose_your_size">Choose your size</string>
     <string name="choose_the_type_of_clothing">Choose the type of clothing</string>
     <string name="get">Get</string>
+    <string name="your_check">Your check</string>
+    <string name="login_over">Login:</string>
+    <string name="password_over">Password:</string>
+    <string name="gender">Gender:</string>
+    <string name="size">Size:</string>
+    <string name="type_of_clothes">Type of \nclothes:</string>
+    <string name="clothes">Clothes:</string>
+    <string name="thanks">Thanks for the purchase</string>
     <string-array name="array_size">
         <item>XS</item>
         <item>S</item>
@@ -49,26 +57,26 @@
 
     <string-array name="array_Headgear_female">
         <item>PANAMA ADICOLOR TREFOIL</item>
-        <item>БЕЙСБОЛКА ADICOLOR CLASSIC CURVED FOAM</item>
-        <item>TIRO 21 BINI HAT</item>
-        <item>SNAPBACK CAP</item>
+        <item>BASEBALL CAP DAILY</item>
+        <item>PERFORMANCE CAP</item>
+        <item>SATIN BASEBALL CAP</item>
     </string-array>
     <string-array name="array_Outerwear_female">
         <item>HOODED PARKA UTILITAS</item>
-        <item>RUNNING JACKET OWN THE RUN</item>
-        <item>DOWN JACKET HELIONIC</item>
-        <item>R.Y.V. COACH JACKET</item>
+        <item>ADIDAS 2000 LUXE BOMBER JACKET</item>
+        <item>WINDBREAKER ESSENTIALS ALLOVER PRINT</item>
+        <item>DOWN JACKET REVERSIBLE MONOGRAM</item>
     </string-array>
     <string-array name="array_Underwear_female">
-        <item>ESSENTIALS 3-STRIPES KNIT PANTS</item>
-        <item>INSULATED TWO-LAYER RESORT JUMPSUIT</item>
-        <item>SHAMROCK 3D ADICOLOR PANTS</item>
-        <item>ADICOLOR TREFOIL TEC LUXE PANTS</item>
+        <item>ADICOLOR CLASSICS ADIBREAK PANTS</item>
+        <item>PANTS ALWAYS ORIGINAL SLIM SNAP-BUTTON</item>
+        <item>PANTS WITH RIB CUFFS</item>
+        <item>ADIDAS SPORTSWEAR STUDIO LOUNGE FLEECE PANTS</item>
     </string-array>
     <string-array name="array_Shoes_female">
-        <item>HOOPS 2.0 HIGH-TOP SNEAKERS</item>
-        <item>HANDBALL SNEAKERS SPEZIAL</item>
-        <item>OZWEEGO SNEAKERS</item>
-        <item>FORUM LOW SNEAKERS</item>
+        <item>FORUM BOLD SNEAKERS</item>
+        <item>OZWEEGO CELOX SNEAKERS</item>
+        <item>STAN SMITH SNEAKERS</item>
+        <item>OZELIA SNEAKERS</item>
     </string-array>
 </resources>

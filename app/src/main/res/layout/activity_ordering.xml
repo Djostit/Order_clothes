@@ -1,131 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ordering"
-    android:orientation="vertical"
-    android:layout_margin="5dp">
+    tools:context=".Ordering">
 
-    <TextView
-        android:id="@+id/text_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-
-        android:text="@string/welcome"
-
-        android:textColor="@color/black"
-        android:textSize="36sp"
-
-        android:layout_gravity="center"/>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
-
-        <RadioButton android:id="@+id/male"
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/text_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
 
-            android:text="@string/male"
+            android:text="@string/welcome"
+
             android:textColor="@color/black"
             android:textSize="36sp"
 
-            android:onClick="ShowAddition"/>
-        <RadioButton android:id="@+id/woman"
+            android:layout_gravity="center"/>
 
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
-            android:text="@string/female"
+            <RadioButton android:id="@+id/male"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+
+                android:onClick="ShowAddition"/>
+            <RadioButton android:id="@+id/woman"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/female"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+
+                android:onClick="ShowAddition"/>
+        </RadioGroup>
+
+        <TextView android:id="@+id/select_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+
+            android:text="@string/choose_your_size"
+
             android:textColor="@color/black"
             android:textSize="36sp"
 
-            android:onClick="ShowAddition"/>
-    </RadioGroup>
+            android:layout_gravity="center"/>
 
-    <TextView android:id="@+id/select_size_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        <Spinner android:id="@+id/select_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:text="@string/choose_your_size"
+            android:padding="15dp"
 
-        android:textColor="@color/black"
-        android:textSize="36sp"
+            android:entries="@array/array_size"/>
 
-        android:layout_gravity="center"/>
+        <TextView android:id="@+id/select_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
 
-    <Spinner android:id="@+id/select_size"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:text="@string/choose_the_type_of_clothing"
 
-        android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="36sp"
 
-        android:entries="@array/array_size"/>
+            android:layout_gravity="center"/>
 
-    <TextView android:id="@+id/select_type_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        <Spinner android:id="@+id/select_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:text="@string/choose_the_type_of_clothing"
+            android:padding="15dp"
 
-        android:textColor="@color/black"
-        android:textSize="36sp"
+            android:entries="@array/array_type_cloth"/>
 
-        android:layout_gravity="center"/>
+        <Button android:id="@+id/button_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <Spinner android:id="@+id/select_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="@string/get"
 
-        android:padding="15dp"
+            android:onClick="GetTypeCloth"/>
 
-        android:entries="@array/array_type_cloth"/>
+        <Spinner android:id="@+id/Headgear_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <Button android:id="@+id/button_get"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:padding="15dp"
 
-        android:textSize="26sp"
-        android:text="@string/get"
+            android:entries="@array/array_Headgear_male"/>
+        <Spinner android:id="@+id/Outerwear_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:onClick="GetTypeCloth"/>
+            android:padding="15dp"
 
-    <Spinner android:id="@+id/Headgear_male"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:entries="@array/array_Outerwear_male"/>
+        <Spinner android:id="@+id/Underwear_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:padding="15dp"
+            android:padding="15dp"
 
-        android:entries="@array/array_Headgear_male"/>
-    <Spinner android:id="@+id/Outerwear_male"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:entries="@array/array_Underwear_male"/>
+        <Spinner android:id="@+id/Shoes_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:padding="15dp"
+            android:padding="15dp"
 
-        android:entries="@array/array_Outerwear_male"/>
-    <Spinner android:id="@+id/Underwear_male"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:entries="@array/array_Shoes_male"/>
 
-        android:padding="15dp"
+        <Spinner android:id="@+id/Headgear_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:entries="@array/array_Underwear_male"/>
-    <Spinner android:id="@+id/Shoes_male"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:padding="15dp"
 
-        android:padding="15dp"
+            android:entries="@array/array_Headgear_female"/>
+        <Spinner android:id="@+id/Outerwear_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:entries="@array/array_Shoes_male"/>
+            android:padding="15dp"
 
-</LinearLayout>
+            android:entries="@array/array_Outerwear_female"/>
+        <Spinner android:id="@+id/Underwear_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+
+            android:entries="@array/array_Underwear_female"/>
+        <Spinner android:id="@+id/Shoes_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+
+            android:entries="@array/array_Shoes_female"/>
+
+        <Button android:id="@+id/Place_an_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="26sp"
+            android:text="Place an order"
+
+            android:onClick="PlaceAnOrder"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_check"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="55sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/login_over"
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+            <TextView android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/password_over"
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+            <TextView android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+            <TextView android:id="@+id/ur_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/size"
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+            <TextView android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="@string/type_of_clothes"
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+            <TextView android:id="@+id/type_of_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/clothes"
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+            <TextView android:id="@+id/clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:textColor="@color/black"
+                android:textSize="36sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="55sp" />
+    </LinearLayout>
+</ScrollView>
