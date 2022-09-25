@@ -17,6 +17,8 @@
     <string name="type_of_clothes">Type of \nclothes:</string>
     <string name="clothes">Clothes:</string>
     <string name="thanks">Thanks for the purchase</string>
+    <string name="place_an_order">Place an order</string>
+    <string name="logo">logo</string>
     <string-array name="array_size">
         <item>XS</item>
         <item>S</item>
