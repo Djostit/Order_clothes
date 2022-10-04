@@ -23,35 +23,6 @@
 
             android:layout_gravity="center"/>
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
-
-            <RadioButton android:id="@+id/male"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="@string/male"
-                android:textColor="@color/black"
-                android:textSize="36sp"
-
-                android:onClick="ShowAddition"/>
-            <RadioButton android:id="@+id/woman"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="@string/female"
-                android:textColor="@color/black"
-                android:textSize="36sp"
-
-                android:onClick="ShowAddition"/>
-        </RadioGroup>
-
         <TextView android:id="@+id/select_size_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

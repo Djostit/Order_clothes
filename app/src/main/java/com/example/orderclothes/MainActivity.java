@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(this, Ordering.class);
+        Intent intent = new Intent(this, ChoiceGender.class);
 
         intent.putExtra("login", login);
         intent.putExtra("password", password);

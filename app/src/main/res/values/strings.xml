@@ -19,6 +19,7 @@
     <string name="thanks">Thanks for the purchase</string>
     <string name="place_an_order">Place an order</string>
     <string name="logo">logo</string>
+    <string name="choise_ur_gender">Choise ur gender</string>
     <string-array name="array_size">
         <item>XS</item>
         <item>S</item>
@@ -80,5 +81,9 @@
         <item>OZWEEGO CELOX SNEAKERS</item>
         <item>STAN SMITH SNEAKERS</item>
         <item>OZELIA SNEAKERS</item>
+    </string-array>
+    <string-array name="array_gender">
+        <item>Male</item>
+        <item>Female</item>
     </string-array>
 </resources>

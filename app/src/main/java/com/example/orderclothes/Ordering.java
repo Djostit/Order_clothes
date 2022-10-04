@@ -14,6 +14,7 @@ import android.widget.TextView;
 public class Ordering extends AppCompatActivity {
     String login;
     String password;
+    String Gender;
 
     TextView select_size_text;
     Spinner select_size;
@@ -52,8 +53,7 @@ public class Ordering extends AppCompatActivity {
 
         text_login.setText(String.format("Hi, %s. What are you interested in?", login));
 
-        male = findViewById(R.id.male);
-        female = findViewById(R.id.woman);
+        Gender = arg.get("gender").toString();
 
         select_size_text = findViewById(R.id.select_size_text);
         select_size = findViewById(R.id.select_size);
@@ -95,10 +95,7 @@ public class Ordering extends AppCompatActivity {
 
         Place_an_order.setVisibility(View.GONE);
 
-    }
-
-    public void ShowAddition(View view) {
-        if(male.isChecked()){
+        if(Gender.equals("Male")){
             if(select_size_text.getVisibility() == View.INVISIBLE){
                 select_size_text.setVisibility(View.VISIBLE);
                 select_size.setVisibility(View.VISIBLE);
@@ -109,7 +106,7 @@ public class Ordering extends AppCompatActivity {
                 button_get.setVisibility(View.VISIBLE);
             }
         }
-        else if(female.isChecked()){
+        else if(Gender.equals("Female")){
             if(select_size_text.getVisibility() == View.INVISIBLE){
                 select_size_text.setVisibility(View.VISIBLE);
                 select_size.setVisibility(View.VISIBLE);
