@@ -29,7 +29,7 @@ public class Order_check extends AppCompatActivity {
 
         TextView type_of_clothes = findViewById(R.id.type_of_clothes);
 
-        type_of_clothes.setText(arg.get("type_cloth").toString());
+        type_of_clothes.setText(arg.get("typeCloth").toString());
 
         TextView clothes = findViewById(R.id.clothes);
 

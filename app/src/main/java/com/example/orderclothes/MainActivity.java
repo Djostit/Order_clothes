@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         TextView text_log = findViewById(R.id.login);
         TextView text_pass = findViewById(R.id.password);
 
-        String login = text_log.getText().toString();
-        String password = text_pass.getText().toString();
+        //String login = ;
+        //String password = ;
 
-        if(login.isEmpty() ||
-            password.isEmpty()){
+        if(text_log.getText().toString().isEmpty() ||
+                text_pass.getText().toString().isEmpty()){
             Toast toast = Toast.makeText(this, "Empty", Toast.LENGTH_SHORT);
             toast.show();
             return;
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, ChoiceGender.class);
 
-        intent.putExtra("login", login);
-        intent.putExtra("password", password);
+        intent.putExtra("login", text_log.getText().toString());
+        intent.putExtra("password", text_pass.getText().toString());
 
         startActivity(intent);
     }

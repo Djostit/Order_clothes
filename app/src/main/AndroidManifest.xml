@@ -14,6 +14,13 @@
         android:theme="@style/Theme.OrderClothes"
         tools:targetApi="31">
         <activity
+            android:name=".ChoiceOfClothingType"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ChoiceGender"
             android:exported="false">
             <meta-data

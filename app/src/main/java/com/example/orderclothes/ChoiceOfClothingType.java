@@ -8,36 +8,40 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class ChoiceGender extends AppCompatActivity {
-
-    String login;
-    String password;
+public class ChoiceOfClothingType extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choice_gender);
+        setContentView(R.layout.activity_choice_of_clothing_type);
 
         Bundle arg = getIntent().getExtras();
-        login = arg.get("login").toString();
-        password = arg.get("password").toString();
 
         ListView countriesList = findViewById(R.id.countriesList);
 
-        Intent intent = new Intent(getApplicationContext(), ChoiceOfClothingType.class);
-        intent.putExtra("login", login);
-        intent.putExtra("password", password);
+        Intent intent = new Intent(getApplicationContext(), Ordering.class);
+        intent.putExtra("login", arg.get("login").toString());
+        intent.putExtra("password", arg.get("password").toString());
+        intent.putExtra("gender", arg.get("gender").toString());
 
         countriesList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
                     case 0:
-                        intent.putExtra("gender", "Male");
+                        intent.putExtra("typeCloth", "Headgear");
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("gender", "Female");
+                        intent.putExtra("typeCloth", "Outerwear");
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent.putExtra("typeCloth", "Underwear");
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent.putExtra("typeCloth", "Shoes");
                         startActivity(intent);
                         break;
                 }
