@@ -20,6 +20,7 @@
     <string name="place_an_order">Place an order</string>
     <string name="logo">logo</string>
     <string name="choise_ur_gender">Choise ur gender</string>
+    <string name="count">Count:</string>
     <string-array name="array_size">
         <item>XS</item>
         <item>S</item>

@@ -45,8 +45,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ChoiceGender"
-        app:layout_constraintBottom_toTopOf="@id/ChoiceType"/>
+        app:layout_constraintBottom_toTopOf="@id/Count"/>
 
+    <TextView android:id="@+id/Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/black"
+        android:text="@string/count"
+        android:textSize="36sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/seekBar" />
+
+    <SeekBar android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:min="1"
+        android:max="10"
+        android:progress="1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Count"
+        app:layout_constraintBottom_toTopOf="@id/ChoiceType"/>
     <TextView android:id="@+id/ChoiceType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +83,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_size"
+        app:layout_constraintTop_toBottomOf="@+id/Count"
         app:layout_constraintBottom_toTopOf="@id/countriesList"/>
 
     <ListView android:id="@+id/countriesList"

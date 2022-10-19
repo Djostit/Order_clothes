@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RadioButton;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class Ordering extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     ListView countriesList;
     Spinner select_size;
+    TextView Count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,30 @@ public class Ordering extends AppCompatActivity {
         countriesList = findViewById(R.id.countriesList);
 
         select_size = findViewById(R.id.select_size);
+
+        Count = findViewById(R.id.Count);
+
+        SeekBar seekBar = findViewById(R.id.seekBar);
+        Count.setText(String.format("Count: %s", String.valueOf(seekBar.getProgress())));
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+                // textView.setText(String.valueOf(progress));
+                Count.setText(String.format("Count: %s", String.valueOf(progress)));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         switch (arg.get("typeCloth").toString()){
             case "Headgear":
@@ -89,6 +115,8 @@ public class Ordering extends AppCompatActivity {
             {
                 intent.putExtra("cloth", countriesList.getItemAtPosition(position).toString());
                 intent.putExtra("size", select_size.getSelectedItem().toString());
+
+                intent.putExtra("count", String.valueOf(seekBar.getProgress()));
 
                 startActivity(intent);
             }

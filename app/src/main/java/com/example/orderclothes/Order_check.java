@@ -34,5 +34,9 @@ public class Order_check extends AppCompatActivity {
         TextView clothes = findViewById(R.id.clothes);
 
         clothes.setText(arg.get("cloth").toString());
+
+        TextView count = findViewById(R.id.count);
+
+        count.setText(arg.get("count").toString());
     }
 }
